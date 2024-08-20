@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: lightblue;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.header {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5em;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.enter-players {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  border: 2px solid #000;
+  outline: none;
+  padding: 8px 12px;
+  margin: 0 0 10px 4px;
+  font-size: 18px;
+  width: 90%;
+}
+
+.input-field:focus {
+  border-color: #ff3d68;
+}
+
+.submit-btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: tomato;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: red;
+}
+
+.board___player-turn {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #ff3d68;
+}
+
+.board__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ececec;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board__cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.board__cell:hover {
+  background-color: aqua;
+  transform: scale(1.05);
+}
+
+.board__cell--winner {
+  background-color: lightgreen;
+}
+
+.letter {
+  font-family: 'Permanent Marker', cursive;
+  color: #000;
+}
+
+.reset {
+  margin-top: 20px;
+}
+
+.replay-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: tomato;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.replay-btn:hover {
+  background-color: red;
+}
+
+@media (max-width: 500px) {
+  .board__cell {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5em;
+  }
+
+  .replay-btn {
+    width: 50%;
+  }
+}
